@@ -8,4 +8,12 @@ int main(void)
 
     printf("Variable's pointer holds: %p\n", p);
     printf("Stored value in variable is: %i\n", *p);
+
+    // strings are lies.
+    // strings are just pointers to chars
+    // C allocates the char array onto memory and just needs the first address to find the whole string.
+    typedef char* string;
+    string s = "HI!";
+
+    printf("%s\n", s);
 }
