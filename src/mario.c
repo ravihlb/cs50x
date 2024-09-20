@@ -3,13 +3,25 @@
 
 int main(void)
 {
-
     const int n = get_int("Height: ");
 
-    for (int i = 0; i < n; i++) {
-        for (int j = 0; j < n; j++) {
+    for (int i = n; i > 0; i--) {
+
+        for (int k = i; k > 0; k--) {
+            printf(" ");
+        }
+
+        for (int j = i; j <= n; j++) {
             printf("#");
         }
+
+        printf(" ");
+        printf(" ");
+
+        for (int j = i; j <= n; j++) {
+            printf("#");
+        }
+
         printf("\n");
     }
 }
