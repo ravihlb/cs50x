@@ -31,6 +31,8 @@ int main(void)
     }
 
     long first_two_digits = card_number;
+
+    // being larger than 99 means it's still not a 2-digit number
     while (first_two_digits > 99)
     {
         first_two_digits /= 10;
