@@ -1,0 +1,100 @@
+# Selection sort
+    LB: Om(n^2)
+    UB: O(n^2)
+
+    WORST LB
+    MID UB
+
+# Bubble sort
+    LB: Om(n)
+    UB: O(n^2)
+
+    BEST LB
+    MID UB
+
+# Merge sort
+    LB: Om(n * log(n))
+    UB: O(n * log(n))
+
+    MID LB
+    BEST UB
+
+
+# sort1
+ - BEST LB
+ - WORST UB
+
+ * Probably bubble sort
+
+# sort2
+ - MID LB
+ - BEST UB
+
+ * Probably merge sort
+
+# sort3
+ - WORST LB
+ - MID UB
+
+ * Probably selection sort
+
+
+./sort1 - sorted5000.txt real 0.01s
+./sort1 - sorted10000.txt real 0.02s
+./sort1 - sorted50000.txt real 0.09s
+# best LB
+
+./sort2 - sorted5000.txt real 0.01s
+./sort2 - sorted10000.txt real 0.02s
+./sort2 - sorted50000.txt real 0.16s
+# mid LB
+
+./sort3 - sorted5000.txt real 0.02s
+./sort3 - sorted10000.txt real 0.07s
+./sort3 - sorted50000.txt real 1.41s
+# worst LB
+
+
+./sort1 - random5000.txt real 0.04s
+./sort1 - random10000.txt real 0.13s
+./sort1 - random50000.txt real 4.20s #nice
+# worst at UB
+
+./sort2 - random5000.txt real 0.01s
+./sort2 - random10000.txt real 0.02s
+./sort2 - random50000.txt real 0.15s
+# best UB
+
+./sort3 - random5000.txt real 0.02s
+./sort3 - random10000.txt real 0.07s
+./sort3 - random50000.txt real 1.42s
+# mid UB
+
+
+./sort1 - reversed5000.txt real 0.04s
+./sort1 - reversed10000.txt real 0.16s
+./sort1 - reversed50000.txt real 3.59s
+# worst UB
+
+./sort2 - reversed5000.txt real 0.01s
+./sort2 - reversed10000.txt real 0.03s
+./sort2 - reversed50000.txt real 0.11s
+# best UB
+
+./sort3 - reversed5000.txt real 0.02s
+./sort3 - reversed10000.txt real 0.08s
+./sort3 - reversed50000.txt real 1.58s
+# mid UB
+
+
+sort1 uses: bubble sort
+
+How do you know?: it took the longest to run on upper bound and was the fastest on the lower bound
+
+sort2 uses: merge sort
+
+How do you know?: it performed the worst at the lower bound and the best at the upper bound
+
+sort3 uses: selection sort
+
+How do you know?: it performed mid at both the lower and upper bound
