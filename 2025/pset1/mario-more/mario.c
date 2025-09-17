@@ -5,17 +5,17 @@ void print_row(int n);
 
 int main()
 {
-    int HEIGHT = 0;
-    while (HEIGHT <= 0)
+    int height = 0;
+    while (height <= 0)
     {
-        HEIGHT = get_int("Height: ");
+        height = get_int("Height: ");
     }
 
-    for (int row = 1; row <= HEIGHT; row++)
+    for (int row = 1; row <= height; row++)
     {
         int spaces = 0;
 
-        while (spaces < HEIGHT - row)
+        while (spaces < height - row)
         {
             spaces++;
             printf(" ");
