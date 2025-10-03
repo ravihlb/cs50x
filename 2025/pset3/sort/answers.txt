@@ -1,0 +1,123 @@
+# sort1 results
+
+## sorted
+
+sorted5000.txt
+real    0.02s
+
+sorted10000.txt
+real    0.03s
+
+sorted50000.txt
+real    0.16s
+
+
+## random
+
+random5000.txt
+real    0.04s
+
+random10000.txt
+real    0.13s
+
+random50000.txt
+real    4.12s
+
+## reversed
+
+reversed5000.txt
+real    0.32s
+
+reversed10000.txt
+real    0.16s
+
+reversed50000.txt
+real    3.56s
+
+# sort2 results
+
+## sorted
+
+sorted5000.txt
+real    0.02s
+
+sorted10000.txt
+real    0.03s
+
+sorted50000.txt
+real    0.17s
+
+
+## random
+
+random5000.txt
+real    0.01s
+
+random10000.txt
+real    0.03s
+
+random50000.txt
+real    0.15s
+
+## reversed
+
+reversed5000.txt
+real    0.02s
+
+reversed10000.txt
+real    0.03s
+
+reversed50000.txt
+real    0.15s
+
+
+# sort3 results
+
+## sorted
+
+sorted5000.txt
+real    0.03s
+
+sorted10000.txt
+real    0.08s
+
+sorted50000.txt
+real    1.41s
+
+
+## random
+
+random5000.txt
+real    0.03s
+
+random10000.txt
+real    0.08s
+
+random50000.txt
+real    1.42s
+
+
+## reversed
+
+reversed5000.txt
+real    0.03s
+
+reversed10000.txt
+real    0.08s
+
+reversed50000.txt
+real    1.60s
+
+
+
+sort1 uses: bubble sort
+
+How do you know?: by elimination, and also, it had the worst upper bound times.
+
+sort2 uses: merge sort
+
+How do you know?: it had constant time across all the different files, respective to their size.
+
+sort3 uses: selection sort
+
+How do you know?: it has the worst lower bound.
